@@ -1,0 +1,3 @@
+# Stale Closure Bug in React useEffect
+
+This repository demonstrates a common but subtle bug in React's `useEffect` hook related to closures and stale state values. The component `MyComponent` attempts to increment a counter every second. However, due to an incorrect use of a closure, the counter value does not update correctly. The `count` variable inside the `setInterval` callback always refers to its initial value, leading to unexpected behavior.  The solution demonstrates the correct way to access and update the latest state value using the `setCount` function.
